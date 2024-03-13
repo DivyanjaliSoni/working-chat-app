@@ -1,6 +1,8 @@
 import { Server } from "socket.io";
 import messageHandler from "../../utils/sockets/messageHandler";
 
+export const dynamic = 'force-dynamic';
+
 export default function SocketHandler(req, res) {
   // It means that socket server was already initialised
   if (res.socket.server.io) {
